@@ -1,0 +1,16 @@
+git checkout -b newbranch
+mkdir project
+touch repoTest1.js repoTest2.htm project/prjtTest1.js project/prjtTest1.htm
+git status
+
+# On branch newbranch
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#       project/
+#       repoTest1.js
+#       repoTest2.htm
+nothing added to commit but untracked files present (use "git add" to track)
+git add .
+git commit -m "Test files for test-repo-789 fork"
+git push https://github.com/SampleUser1234/test-repo-789.git newbranch
